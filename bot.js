@@ -1,11 +1,9 @@
 
-
 const Discord = require('discord.js');
 const client = new Discord.Client();
 const ytdl = require('ytdl-core');
 const request = require('request');
 const fs = require('fs');
-client.login(process.env.BOT_TOKEN);
 const getYoutubeID = require('get-youtube-id');
 const fetchVideoInfo = require('youtube-info');
 const yt_api_key = "AIzaSyDeoIH0u1e72AtfpwSKKOSy3IPp2UHzqi4";
@@ -21,7 +19,7 @@ var skipReq = 0;
 var skippers = [];
 var now_playing = [];
 
-const prefix = "F";
+var prefix = "F";
 
 client.on('ready', () => {
     console.log(`Logged in as ${client.user.tag}!`);
@@ -265,3 +263,9 @@ if (message.content.startsWith(adminprefix + 'setT')) {
 }
 
 });
+
+
+
+
+client.login(process.env.BOT_TOKEN);
+
