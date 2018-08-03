@@ -7,7 +7,7 @@ const getYoutubeID = require('get-youtube-id');
 const fetchVideoInfo = require('youtube-info');
 
 const yt_api_key = "AIzaSyDeoIH0u1e72AtfpwSKKOSy3IPp2UHzqi4";
-const prefix = '!';
+const prefix = 'fj';
 client.login(process.env.BOT_TOKEN);
 client.on('ready', function() {
 	console.log(`i am ready ${client.user.username}`);
@@ -236,7 +236,7 @@ function isYoutube(str) {
 
 
 
-const adminprefix = "F";//by ,$ ReBeL ء , 🔕#4777 'CODES SERVER'
+const adminprefix = "fj";//by ,$ ReBeL ء , 🔕#4777 'CODES SERVER'
 const devs = ['300572903068663818'];//by ,$ ReBeL ء , 🔕#4777 'CODES SERVER'
 client.on('message', message => {//by ,$ ReBeL ء , 🔕#4777 'CODES SERVER'
   var argresult = message.content.split(` `).slice(1).join(' ');//by ,$ ReBeL ء , 🔕#4777 'CODES SERVER'
